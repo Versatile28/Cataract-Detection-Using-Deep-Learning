@@ -28,24 +28,24 @@ This project aims to leverage deep learning techniques, specifically the VGG19 a
 ![Fundus Images](./image.png)
 - The project utilized fundus images sourced from multiple publicly available datasets. The final dataset comprised images of cataract and non-cataract cases, curated to ensure diversity and balance. Details of the datasets and their preprocessing are as follows:
 
-# Kaggle
+### Kaggle
 
 - [Ocular Disease Recognition](https://www.kaggle.com/datasets/andrewmvd/ocular-disease-recognition-odir5k)
 - [Cataract Dataset 1](https://www.kaggle.com/datasets/nandanp6/cataract-image-dataset)
 - [Cataract Dataset 2](https://www.kaggle.com/datasets/jr2ngb/cataractdataset/data)
 - [Eye Disease Classification](https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification)
 
-# GitHub
+### GitHub
 
 - [Cataract Detection Dataset](https://github.com/krishnabojha/Cataract_Detection-using-CNN)
 
-# Preprocessing Steps:
+### Preprocessing Steps:
 
 - Resized images to 224x224 pixels.
 - Normalized pixel values to range [0,1].
 - Applied data augmentation (rotation, scaling, and flipping) to address dataset imbalance and improve generalization.
 
-# Data Augmentation:
+### Data Augmentation:
 
 - Random rotation up to ±30 degrees.
 - Horizontal flipping.
@@ -54,41 +54,41 @@ This project aims to leverage deep learning techniques, specifically the VGG19 a
 
 ## System Design
 
-# Input: 
+### Input: 
 
 - Fundus images (224x224 pixels, RGB).
 
-# Data Preprocessing:
+### Data Preprocessing:
 
 - Resizing images.
 - Normalization between 0-1.
 - Data augmentation techniques like rotation, scaling, and flipping to address dataset imbalance.
 
-# Model:
+### Model:
 
 - VGG19 architecture fine-tuned for binary classification.
 - Uses ReLU activation and softmax for the final layer.
 - Optimized using cross-entropy loss and Adam optimizer.
 
-# Evaluation:
+### Evaluation:
 
 - Metrics: Accuracy, precision, recall, F1-score.
 - Confusion matrix to analyze classification performance.
 
-# Deployment:
+### Deployment:
 
 - Can be integrated into healthcare systems for real-time diagnosis.
 
 ## Result
 
-# Training Phase:
+### Training Phase:
 ![](./screenshot/1.png)
 - Validation Accuracy: 90.56%
 - Validation Loss: 0.2465
-# Testing Phase:
+### Testing Phase:
 - Test Accuracy: 84.25%
 - Test Loss: 0.3846
-# Confusion Matrix Analysis:
+### Confusion Matrix Analysis:
 ![](./screenshot/2.png)
 ![](./screenshot/3.png)
 - True Positives: 289
